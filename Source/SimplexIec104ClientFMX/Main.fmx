@@ -1,0 +1,160 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Simplex IEC 101/104 Client (FMX)'
+  ClientHeight = 440
+  ClientWidth = 825
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object gbxActions: TGroupBox
+    Align = Top
+    Size.Width = 825.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Actions'
+    TabOrder = 1
+    object btnConnect: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 18.000000000000000000
+      TabOrder = 2
+      Text = 'Connect'
+      OnClick = btnConnectClick
+    end
+    object btnDisconnect: TButton
+      Position.X = 128.000000000000000000
+      Position.Y = 18.000000000000000000
+      TabOrder = 1
+      Text = 'Disconnect'
+      OnClick = btnDisconnectClick
+    end
+    object lblLinkStatus: TLabel
+      Position.X = 232.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Link Status: None'
+      TabOrder = 3
+    end
+  end
+  object gbxAsduList: TGroupBox
+    Align = Left
+    Position.Y = 55.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 292.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'ASDUs'
+    TabOrder = 2
+    object tvAsduList: TTreeView
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 265.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnClick = tvAsduListClick
+      Viewport.Width = 101.000000000000000000
+      Viewport.Height = 261.000000000000000000
+    end
+  end
+  object gbxLog: TGroupBox
+    Align = Bottom
+    Position.Y = 352.000000000000000000
+    Size.Width = 825.000000000000000000
+    Size.Height = 88.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Log'
+    TabOrder = 4
+    object mmLog: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 809.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 805.000000000000000000
+      Viewport.Height = 61.000000000000000000
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Bottom
+    Cursor = crVSplit
+    MinSize = 20.000000000000000000
+    Position.Y = 347.000000000000000000
+    Size.Width = 825.000000000000000000
+    Size.Height = 5.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Splitter2: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 120.000000000000000000
+    Position.Y = 55.000000000000000000
+    Size.Width = 5.000000000000000000
+    Size.Height = 292.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object gbxValueList: TGroupBox
+    Align = Client
+    Size.Width = 700.000000000000000000
+    Size.Height = 292.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Values'
+    TabOrder = 7
+    object sgValueList: TStringGrid
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      CanFocus = True
+      ClipChildren = True
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 681.000000000000000000
+      Size.Height = 265.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      RowCount = 2
+      Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+      Viewport.Width = 677.000000000000000000
+      Viewport.Height = 240.000000000000000000
+      object sclAddressInfoObject: TStringColumn
+        Header = 'AddressInfoObject'
+        ReadOnly = True
+        Size.Width = 110.000000000000000000
+      end
+      object sclValueType: TStringColumn
+        Header = 'ValueType'
+        Size.Width = 110.000000000000000000
+      end
+      object sclValue: TStringColumn
+        Header = 'Value'
+        Size.Width = 110.000000000000000000
+      end
+      object sclQuality: TStringColumn
+        Header = 'Quality'
+        Size.Width = 110.000000000000000000
+      end
+      object sclTime: TStringColumn
+        Header = 'Time'
+        Size.Width = 110.000000000000000000
+      end
+      object sclComments: TStringColumn
+        Header = 'Comments'
+        Size.Width = 110.000000000000000000
+      end
+    end
+  end
+  object tmProcess: TTimer
+    Interval = 100
+    OnTimer = tmProcessTimer
+    Left = 40
+    Top = 87
+  end
+end

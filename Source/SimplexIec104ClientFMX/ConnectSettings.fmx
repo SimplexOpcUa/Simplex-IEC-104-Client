@@ -1,0 +1,634 @@
+object frmConnectSettings: TfrmConnectSettings
+  Left = 0
+  Top = 0
+  BorderStyle = ToolWindow
+  Caption = #1057'onnection Settings'
+  ClientHeight = 481
+  ClientWidth = 356
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object gbxConnectSettings: TGroupBox
+    Align = Top
+    Size.Width = 356.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object cbxChannel: TComboBox
+      Items.Strings = (
+        'TCP'
+        'Serial')
+      ItemIndex = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 147.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object lblChannel: TLabel
+      Position.X = 24.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 'Channel'
+      TabOrder = 2
+    end
+    object cbxProtocol: TComboBox
+      Items.Strings = (
+        'IEC 60870-5-101'
+        'IEC 60870-5-104')
+      ItemIndex = 1
+      Position.X = 192.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 147.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+    end
+    object lblProtocol: TLabel
+      Position.X = 192.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 'Protocol'
+      TabOrder = 4
+    end
+  end
+  object tcSettings: TTabControl
+    Align = Top
+    Position.Y = 73.000000000000000000
+    Size.Width = 356.000000000000000000
+    Size.Height = 347.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 3
+    TabPosition = PlatformDefault
+    Sizes = (
+      356s
+      321s
+      356s
+      321s
+      356s
+      321s)
+    object tabChannelSettings: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 110.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Channel Settings'
+      ExplicitSize.cx = 110.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object gbxChannelTcpSettings: TGroupBox
+        Align = Top
+        Size.Width = 356.000000000000000000
+        Size.Height = 89.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'TCP Settings'
+        TabOrder = 0
+        object lblChannelTcpIpAddress: TLabel
+          Position.X = 16.000000000000000000
+          Position.Y = 27.000000000000000000
+          Text = 'IP address'
+          TabOrder = 3
+        end
+        object edtChannelTcpIpAddress: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Text = '127.0.0.1'
+          Position.X = 192.000000000000000000
+          Position.Y = 23.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtChannelTcpPort: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 2
+          Text = '2404'
+          Position.X = 192.000000000000000000
+          Position.Y = 50.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object lblChannelTcpPort: TLabel
+          Position.X = 16.000000000000000000
+          Position.Y = 54.000000000000000000
+          Text = 'TCP port'
+          TabOrder = 4
+        end
+      end
+      object gbxChannelSerialSettings: TGroupBox
+        Align = Top
+        Position.Y = 89.000000000000000000
+        Size.Width = 356.000000000000000000
+        Size.Height = 168.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Serial Settings'
+        TabOrder = 1
+        object cbxChannelSerialPortName: TComboBox
+          Position.X = 192.000000000000000000
+          Position.Y = 23.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+        object lblChannelSerialPortName: TLabel
+          Position.X = 16.000000000000000000
+          Position.Y = 27.000000000000000000
+          Text = 'Port name'
+          TabOrder = 2
+        end
+        object cbxChannelSerialSpeed: TComboBox
+          Items.Strings = (
+            '110'
+            '300'
+            '600'
+            '1200'
+            '2400'
+            '4800'
+            '9600'
+            '14400'
+            '19200'
+            '38400'
+            '56000'
+            '57600'
+            '115200'
+            '128000'
+            '230400'
+            '256000'
+            '460800'
+            '921600')
+          ItemIndex = 8
+          Position.X = 192.000000000000000000
+          Position.Y = 50.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+        end
+        object lblChannelSerialSpeed: TLabel
+          Position.X = 16.000000000000000000
+          Position.Y = 54.000000000000000000
+          Text = 'Speed'
+          TabOrder = 4
+        end
+        object cbxChannelSerialParity: TComboBox
+          Items.Strings = (
+            'no'
+            'odd'
+            'even'
+            'mark'
+            'space')
+          ItemIndex = 0
+          Position.X = 192.000000000000000000
+          Position.Y = 77.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+        end
+        object lblChannelSerialParity: TLabel
+          Position.X = 16.000000000000000000
+          Position.Y = 80.000000000000000000
+          Text = 'Parity'
+          TabOrder = 6
+        end
+        object cbxChannelSerialRtsDtr: TComboBox
+          Items.Strings = (
+            'no'
+            'yes')
+          ItemIndex = 1
+          Position.X = 192.000000000000000000
+          Position.Y = 104.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+        end
+        object lblChannelSerialRtsDtr: TLabel
+          Position.X = 16.000000000000000000
+          Position.Y = 108.000000000000000000
+          Text = 'DTR/RTS'
+          TabOrder = 8
+        end
+        object edtChannelSerialReadIntervalTimeout: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 9
+          Text = '10'
+          Position.X = 192.000000000000000000
+          Position.Y = 131.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object lblChannelSerialReadIntervalTimeout: TLabel
+          Position.X = 16.000000000000000000
+          Position.Y = 135.000000000000000000
+          Size.Width = 161.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Read interval timeout, msec'
+          TabOrder = 10
+        end
+      end
+    end
+    object tabIec104Settings: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 106.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'IEC 104 Settings'
+      ExplicitSize.cx = 106.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object edtIec104TimeoutAnswer: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Text = '45'
+        Position.X = 192.000000000000000000
+        Position.Y = 12.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec104TimeoutAnswer: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Timeout answer, sec (T1)'
+        TabOrder = 1
+      end
+      object edtIec104TimeoutConfirm: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Text = '30'
+        Position.X = 192.000000000000000000
+        Position.Y = 39.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec104TimeoutConfirm: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 42.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Acknowledge timeout, sec (T2)'
+        TabOrder = 3
+      end
+      object edtIec104TimeoutTest: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Text = '60'
+        Position.X = 192.000000000000000000
+        Position.Y = 66.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec104TimeoutTest: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Idle timeout, sec (T3)'
+        TabOrder = 5
+      end
+      object edtIec104OfflinePollPeriod: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 6
+        Text = '30'
+        Position.X = 192.000000000000000000
+        Position.Y = 93.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec104OfflinePollPeriod: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Poll period of the unavailable channel, sec'
+        TabOrder = 7
+      end
+      object edtIec104MaxNotConfirmCommand: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 8
+        Text = '12'
+        Position.X = 192.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec104MaxNotConfirmCommand: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Maximum number of unconfirmed commands (K)'
+        TabOrder = 9
+      end
+      object edtIec104CountConfirmCommand: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 10
+        Text = '8'
+        Position.X = 192.000000000000000000
+        Position.Y = 147.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec104CountConfirmCommand: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 147.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Number of received commands to send confirmation (W)'
+        TabOrder = 11
+      end
+      object cbxIec104FormatTime: TComboBox
+        Items.Strings = (
+          'Local'
+          'UTC')
+        ItemIndex = 0
+        Position.X = 192.000000000000000000
+        Position.Y = 176.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 12
+      end
+      object lblIec104FormatTime: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 176.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Format current time for 3-byte time'
+        TabOrder = 13
+      end
+    end
+    object tabIec101Settings: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 106.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'IEC 101 Settings'
+      ExplicitSize.cx = 106.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object edtIec101TimeoutAnswer: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Text = '3'
+        Position.X = 192.000000000000000000
+        Position.Y = 12.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec101TimeoutAnswer: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Timeout answer, sec'
+        TabOrder = 1
+      end
+      object edtIec101CountTrySend: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Text = '3'
+        Position.X = 192.000000000000000000
+        Position.Y = 39.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec101CountTrySend: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 42.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Number of attempts to send'
+        TabOrder = 3
+      end
+      object edtIec101OfflinePollPeriod: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Text = '60'
+        Position.X = 192.000000000000000000
+        Position.Y = 66.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec101OfflinePollPeriod: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 61.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Poll period of the unavailable channel, sec'
+        TabOrder = 5
+      end
+      object edtIec101PeriodPollData: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 6
+        Text = '200'
+        Position.X = 192.000000000000000000
+        Position.Y = 93.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec101PeriodPollData: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Poll period of the data, msec'
+        TabOrder = 7
+      end
+      object cbxIec101SizeAddressChannel: TComboBox
+        Items.Strings = (
+          '1'
+          '2')
+        ItemIndex = 0
+        Position.X = 192.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+      end
+      object lblIec101SizeAddressChannel: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 123.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Channel address size, bytes'
+        TabOrder = 9
+      end
+      object cbxIec101SizeAddressAsdu: TComboBox
+        Items.Strings = (
+          '1'
+          '2')
+        ItemIndex = 1
+        Position.X = 192.000000000000000000
+        Position.Y = 146.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+      end
+      object lblIec101SizeAddressAsdu: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 150.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'ASDU address size, bytes'
+        TabOrder = 11
+      end
+      object cbxIec101SizeAddressInfoObject: TComboBox
+        Items.Strings = (
+          '1'
+          '2'
+          '3')
+        ItemIndex = 2
+        Position.X = 192.000000000000000000
+        Position.Y = 173.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 12
+      end
+      object lblIec101SizeAddressInfoObject: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 169.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Address information object size, bytes'
+        TabOrder = 13
+      end
+      object cbxIec101SizeCouseOfTransmit: TComboBox
+        Items.Strings = (
+          '1'
+          '2')
+        ItemIndex = 1
+        Position.X = 192.000000000000000000
+        Position.Y = 200.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 14
+      end
+      object lblIec101SizeCouseOfTransmit: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 204.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Cause of transmission size, bytes'
+        TabOrder = 15
+      end
+      object chbxIec101BalancedMode: TCheckBox
+        Position.X = 192.000000000000000000
+        Position.Y = 232.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 16
+      end
+      object lblIec101BalancedMode: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 232.000000000000000000
+        Text = 'Balanced mode'
+        TabOrder = 17
+      end
+      object edtIec101AddressDevice: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 18
+        Text = '1'
+        Position.X = 192.000000000000000000
+        Position.Y = 255.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object lblIec101AddressDevice: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 259.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Device address'
+        TabOrder = 19
+      end
+      object cbxIec101FormatTime: TComboBox
+        Items.Strings = (
+          'Local'
+          'UTC')
+        ItemIndex = 0
+        Position.X = 192.000000000000000000
+        Position.Y = 282.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 20
+      end
+      object lblIec101FormatTime: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 278.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Format current time for 3-byte time'
+        TabOrder = 21
+      end
+    end
+  end
+  object btnOK: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 440.000000000000000000
+    TabOrder = 4
+    Text = 'OK'
+    OnClick = btnOKClick
+  end
+  object btnCancel: TButton
+    ModalResult = 2
+    Position.X = 240.000000000000000000
+    Position.Y = 440.000000000000000000
+    TabOrder = 5
+    Text = 'Cancel'
+  end
+end
