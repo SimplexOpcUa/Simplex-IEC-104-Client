@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.201,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\SimplexIec104ClientVCL\ConnectSettings.pas=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\SimplexIec104ClientVCL\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.456,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\SimplexIec104ClientVCL\SimplexIec104Client.dproj=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\SimplexIec104ClientVCL\SimplexIec104ClientVCL.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.615,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.025,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.897,=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\SimplexIec104ClientVCL\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.883,C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\VCL\SimplexIec104Client.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.430,C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\VCL\Unit1.dfm</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.201,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\SimplexIec104ClientVCL\ConnectSettings.dfm=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\SimplexIec104ClientVCL\Unit1.dfm</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.430,C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\VCL\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.829,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.117,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\VCL\Unit1.dfm=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\VCL\Main.dfm</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.117,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\VCL\Unit1.pas=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\VCL\Main.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.909,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.154,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.337,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.809,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/07/27 11:43:27.000.349,=C:\SimplexIec104\DelphiSource\Projects\XE 10.2\SimplexIec104Client\Client.Common.pas</Transaction>
+  </Transactions>
+</BorlandProject>
