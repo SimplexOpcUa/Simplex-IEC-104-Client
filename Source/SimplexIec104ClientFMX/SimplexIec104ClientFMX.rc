@@ -1,0 +1,27 @@
+MAINICON ICON "C:\\Program Files (x86)\\Embarcadero\\Studio\\19.0\\bin\\delphi_PROJECTICON.ico"
+/*
+Include manifest xml for XP/Vista
+*/
+1 24 "C:\\SimplexIec104\\DelphiSource\\Projects\\XE2\\Examples\\SimplexIec104ClientVCL\\SimplexIec104ClientVCLManifest.xml"
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEFLAGSMASK 0x3FL
+FILEFLAGS 0x00L
+FILEOS 0x40004L
+FILETYPE 0x1L
+FILESUBTYPE 0x00L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+         BLOCK "040904E4"
+         BEGIN
+              VALUE "FileVersion", "1.0.0.0\0"
+              VALUE "ProductVersion", "1.0.0.0\0"
+         END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+         VALUE "Translation", 0x0409, 1252
+    END
+END

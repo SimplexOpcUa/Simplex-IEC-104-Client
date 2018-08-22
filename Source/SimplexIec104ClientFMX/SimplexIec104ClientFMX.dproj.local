@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.052,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\Examples\SimplexIec104ClientFMX\SimplexIec104ClientFMX.dproj=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.341,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\Examples\SimplexIec104ClientFMX\ConnectSettings.fmx=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\Examples\SimplexIec104ClientFMX\Unit1.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.829,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.516,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\Examples\SimplexIec104ClientFMX\Main.pas=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.529,=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\Examples\SimplexIec104ClientFMX\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.987,=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\Examples\Client.Common.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.516,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\Examples\SimplexIec104ClientFMX\Main.fmx=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.154,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.909,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.341,D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\Examples\SimplexIec104ClientFMX\ConnectSettings.pas=D:\Work\SimplexIec104\DelphiSource\Projects\XE 10.2\Examples\SimplexIec104ClientFMX\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.615,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.564,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.809,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.025,=C:\Users\Евгений\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
